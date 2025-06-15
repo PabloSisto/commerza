@@ -4,7 +4,7 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
+            <h1 id="aspnetTitle">Bienvenidos a Nuestra WB </h1>
             <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
             <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
         </section>
@@ -39,6 +39,11 @@
                 </p>
             </section>
         </div>
+        <section class="row">
+            <h2>Catálogo de Productos</h2>
+            <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="true" CssClass="table table-striped" />
+        </section>
+        
     </main>
 
 </asp:Content>

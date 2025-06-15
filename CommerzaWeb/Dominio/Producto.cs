@@ -14,5 +14,7 @@ namespace CommerzaWeb.Dominio
         public int Stock { get; set; }
         public int CategoriaId { get; set; }
         public int MarcaId { get; set; }
+        public string ImagenUrl { get; set; }
+
     }
 }
