@@ -16,7 +16,7 @@ namespace CommerzaWeb.Negocio
 
             try
             {
-                datos.setearConsuta("SELECT Id, Nombre, Descripcion, Precio, ImagenUrl, Stock FROM Productos");
+                datos.setearConsuta("SELECT Id, Nombre, Descripcion, Precio, Stock FROM Productos");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -27,7 +27,6 @@ namespace CommerzaWeb.Negocio
                     producto.Descripcion = (String)datos.Lector["Descripcion"];
                     producto.Precio = (decimal)datos.Lector["Precio"];
                     producto.Stock = (int)datos.Lector["Stock"];
-                    producto.ImagenUrl = (string)datos.Lector["ImagenUrl"];
 
                     lista.Add(producto);
                 }
